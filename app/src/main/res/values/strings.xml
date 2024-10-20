@@ -1,0 +1,21 @@
+<resources>
+    <!-- App General Strings -->
+    <string name="app_name">My Architectural App</string>
+
+    <!-- Entity Details -->
+    <string name="entity_name">Eiffel Tower</string>
+    <string name="entity_architect">Architect: Gustave Eiffel</string>
+    <string name="entity_location">Location: Paris, France</string>
+    <string name="entity_year_completed">Year Completed: 1889</string>
+    <string name="entity_style">Style: Structural Expressionism</string>
+    <string name="entity_height">Height: 324 meters</string>
+    <string name="entity_description">An iron lattice tower on the Champ de Mars in Paris, named after the engineer Gustave Eiffel, whose company designed and built the tower.</string>
+
+    <!-- Button Labels -->
+    <string name="back_button">Back</string>
+    <string name="login_button">Login</string>
+
+    <!-- Error Messages -->
+    <string name="error_login">Login failed. Please try again.</string>
+    <string name="error_network">Network error. Check your connection.</string>
+</resources>

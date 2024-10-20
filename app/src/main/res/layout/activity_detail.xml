@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/backgroundColor"
+    tools:context="com.assessmentfinal.assessmentfinal.activities.DetailActivity">
+
+    <!-- ScrollView to handle scrolling for longer content -->
+    <ScrollView
+        android:id="@+id/detail_scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Name of the entity -->
+                <TextView
+                    android:id="@+id/entity_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="Eiffel Tower"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <!-- Architect information -->
+                <TextView
+                    android:id="@+id/entity_architect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:text="Architect: Gustave Eiffel"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="18sp" />
+
+                <!-- Location information -->
+                <TextView
+                    android:id="@+id/entity_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:text="Location: Paris, France"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="18sp" />
+
+                <!-- Year completed -->
+                <TextView
+                    android:id="@+id/entity_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:text="Year Completed: 1889"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="18sp" />
+
+                <!-- Style information -->
+                <TextView
+                    android:id="@+id/entity_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:text="Style: Structural Expressionism"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="18sp" />
+
+                <!-- Height -->
+                <TextView
+                    android:id="@+id/entity_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:text="Height: 324 meters"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="18sp" />
+
+                <!-- Description -->
+                <TextView
+                    android:id="@+id/entity_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingTop="16dp"
+                    android:text="An iron lattice tower on the Champ de Mars in Paris, named after the engineer Gustave Eiffel, whose company designed and built the tower."
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/back_button"
+        android:contentDescription="Back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="4dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

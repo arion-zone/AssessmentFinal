@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Final Assignment is a feature-rich Android application that implements a robust login system, a visually appealing dashboard displaying images and details, and a detailed view for selected items. This application leverages modern Android development practices, utilizing Retrofit for network operations, Hilt for dependency injection, and follows the MVVM architectural pattern.
+The Final Assignment is a feature-rich Android application that implements a robust login system, a visually appealing dashboard displaying images and details, and a detailed view for selected items. This application leverages modern Android development practices, utilizing Retrofit for network operations, Hilt for dependency injection, and follows the MVVM architectural pattern. The target SDK is 34.
 
 ## Features
 
